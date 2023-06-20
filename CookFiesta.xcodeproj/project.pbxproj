@@ -39,7 +39,7 @@
 		39AE941329C858AE00657D1D /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE941229C858AE00657D1D /* UITextField.swift */; };
 		39B29D9A29CC45160075FDE9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 39B29D9929CC45160075FDE9 /* SDWebImage */; };
 		39B794BC29D5B9F100B3B679 /* ProfileCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B794BB29D5B9F100B3B679 /* ProfileCVC.swift */; };
-		39F3828529CADA950064ECAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39F3828429CADA950064ECAA /* GoogleService-Info.plist */; };
+		39DB37E82A419FD200054A5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39DB37E72A419FD200054A5F /* GoogleService-Info.plist */; };
 		39FBB0F429C96CE0002A41E7 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FBB0F329C96CE0002A41E7 /* SearchVC.swift */; };
 		39FBB0F629C96CF7002A41E7 /* AddRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FBB0F529C96CF7002A41E7 /* AddRecipeVC.swift */; };
 		39FBB0F829C96D15002A41E7 /* BuyBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FBB0F729C96D15002A41E7 /* BuyBookVC.swift */; };
@@ -83,7 +83,7 @@
 		39AE941029C8414900657D1D /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		39AE941229C858AE00657D1D /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		39B794BB29D5B9F100B3B679 /* ProfileCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCVC.swift; sourceTree = "<group>"; };
-		39F3828429CADA950064ECAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		39DB37E72A419FD200054A5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39FBB0F329C96CE0002A41E7 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		39FBB0F529C96CF7002A41E7 /* AddRecipeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeVC.swift; sourceTree = "<group>"; };
 		39FBB0F729C96D15002A41E7 /* BuyBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyBookVC.swift; sourceTree = "<group>"; };
@@ -222,8 +222,8 @@
 				39AE940229C834A000657D1D /* Assets.xcassets */,
 				39465D9129CB144F004CB17D /* UnoptumizedCode.swift */,
 				39AE940429C834A000657D1D /* LaunchScreen.storyboard */,
+				39DB37E72A419FD200054A5F /* GoogleService-Info.plist */,
 				39AE940729C834A000657D1D /* Info.plist */,
-				39F3828429CADA950064ECAA /* GoogleService-Info.plist */,
 			);
 			path = CookFiesta;
 			sourceTree = "<group>";
@@ -323,7 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39AE940629C834A000657D1D /* LaunchScreen.storyboard in Resources */,
-				39F3828529CADA950064ECAA /* GoogleService-Info.plist in Resources */,
+				39DB37E82A419FD200054A5F /* GoogleService-Info.plist in Resources */,
 				39AE940329C834A000657D1D /* Assets.xcassets in Resources */,
 				39AE940129C8349D00657D1D /* Main.storyboard in Resources */,
 			);
@@ -558,9 +558,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y6UG962B75;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7J2ZXW52DY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CookFiesta/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -574,6 +576,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.at..CookFiesta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Enterprise_Development;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -586,9 +590,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y6UG962B75;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7J2ZXW52DY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CookFiesta/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -602,6 +608,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.at..CookFiesta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Enterprise_Development;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
