@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>&lt;?xml</string>
+				<string>version="1.0"</string>
+				<string>encoding="UTF-8"?&gt;
+&lt;!DOCTYPE</string>
+				<string>plist</string>
+				<string>PUBLIC</string>
+				<string>"-//Apple//DTD</string>
+				<string>PLIST</string>
+				<string>1.0//EN"</string>
+				<string>"http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist</string>
+				<string>version="1.0"&gt;
+&lt;string&gt;com.googleusercontent.apps.1064577750174-c6ng3etk1om69taelb84ki1mq37eai4m&lt;/string&gt;
+&lt;/plist&gt;
+</string>
+			</array>
+		</dict>
+		<dict/>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
